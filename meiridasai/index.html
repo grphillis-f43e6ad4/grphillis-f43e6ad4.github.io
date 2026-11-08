@@ -1,0 +1,1006 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>每日大赛校园大赛-校园赛事类型_通勤追赛场景_赛事对比选择</title>
+  <meta name="description" content="每日大赛校园大赛为高校学生提供每日校园赛事与大型校园比赛的内容入口，涵盖赛程速递、类型分类、深度解析与参赛体验指南，适合关注校园竞技与活动动态的学生及爱好者阅读。">
+  <meta name="keywords" content="校园赛事速递,高校竞技活动,每日赛程更新,校园比赛分类,赛事参与指南">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231e3a5f'/%3E%3Cpath d='M8 22l4-12 4 8 4-6 4 10' stroke='%23f5c542' stroke-width='2.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='24' cy='10' r='2.5' fill='%23f5c542'/%3E%3C/svg%3E">
+  <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+  <style>
+    :root {
+      --ink: #14202e;
+      --ink-soft: #37475c;
+      --muted: #61718a;
+      --line: #dce4ee;
+      --line-strong: #bccbdb;
+      --bg: #f4f7fb;
+      --panel: #ffffff;
+      --panel-soft: #eef3f9;
+      --brand: #1e3a5f;
+      --brand-mid: #2f5f8a;
+      --accent: #d99a1b;
+      --accent-soft: #fdf3da;
+      --accent-ink: #8a5f0b;
+      --green: #1f7a5c;
+      --green-soft: #e2f3ec;
+      --radius-s: 6px;
+      --radius-m: 10px;
+      --radius-l: 16px;
+      --shadow-s: 0 1px 2px rgba(20,32,46,.06);
+      --shadow-m: 0 4px 14px rgba(20,32,46,.08);
+      --shadow-l: 0 10px 30px rgba(20,32,46,.12);
+      --font: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", system-ui, sans-serif;
+      --sticky-h: 104px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: var(--font);
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      font-size: 15px;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--brand-mid); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    h1, h2, h3, h4 { margin: 0 0 .5em; line-height: 1.3; color: var(--ink); font-weight: 700; }
+    h1 { font-size: 1.9rem; letter-spacing: .5px; }
+    h2 { font-size: 1.4rem; margin-top: 0; }
+    h3 { font-size: 1.1rem; margin-top: 1.4em; }
+    p { margin: 0 0 1em; }
+    ul, ol { margin: 0 0 1em; padding-left: 1.4em; }
+    li { margin-bottom: .35em; }
+    button { font-family: inherit; cursor: pointer; }
+    :focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+
+    .skip-link {
+      position: absolute; left: -999px; top: 0; z-index: 200;
+      background: var(--brand); color: #fff; padding: 10px 16px; border-radius: 0 0 var(--radius-s) 0;
+    }
+    .skip-link:focus { left: 0; }
+
+    /* ========== 吸顶公告条 + 页头 ========== */
+    .sticky-top {
+      position: sticky; top: 0; z-index: 100;
+      background: var(--panel);
+      box-shadow: 0 2px 12px rgba(20,32,46,.08);
+    }
+    .notice-bar {
+      background: linear-gradient(90deg, var(--brand) 0%, #2a4d74 100%);
+      color: #e8f0fa;
+      font-size: .82rem;
+      padding: 7px 0;
+      line-height: 1.5;
+    }
+    .notice-bar .wrap {
+      display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+    }
+    .notice-tag {
+      background: var(--accent); color: #3a2a00; font-weight: 700;
+      padding: 1px 8px; border-radius: 20px; font-size: .72rem; letter-spacing: .5px;
+      white-space: nowrap;
+    }
+    .notice-bar a { color: #ffe9b0; text-decoration: underline; }
+    .notice-bar a:hover { color: #fff; }
+
+    .site-header {
+      background: var(--panel);
+      border-bottom: 1px solid var(--line);
+      padding: 10px 0 8px;
+    }
+    .wrap {
+      width: 100%; max-width: 1360px; margin: 0 auto; padding: 0 22px;
+    }
+    .header-inner {
+      display: flex; align-items: center; gap: 18px; flex-wrap: wrap;
+    }
+    .brand { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+    .brand svg { display: block; }
+    .brand-text {
+      font-size: 1.32rem; font-weight: 800; color: var(--brand);
+      letter-spacing: 1px; line-height: 1.2; white-space: nowrap;
+    }
+    .header-nav {
+      display: flex; gap: 4px; flex-wrap: wrap; margin-left: auto; align-items: center;
+    }
+    .header-nav a {
+      font-size: .9rem; color: var(--ink-soft); padding: 6px 11px; border-radius: var(--radius-s);
+      font-weight: 500;
+    }
+    .header-nav a:hover { background: var(--panel-soft); color: var(--brand); text-decoration: none; }
+    .header-search {
+      display: flex; align-items: center; gap: 6px; margin-left: 6px;
+    }
+    .header-search input {
+      border: 1px solid var(--line-strong); border-radius: 20px; padding: 6px 13px;
+      font-size: .86rem; width: 150px; font-family: inherit; background: var(--bg);
+    }
+    .header-search input:focus { border-color: var(--brand-mid); background: #fff; }
+    .header-search button {
+      border: none; background: var(--brand); color: #fff; border-radius: 20px;
+      padding: 6px 13px; font-size: .84rem; font-weight: 600;
+    }
+    .header-search button:hover { background: var(--brand-mid); }
+
+    /* ========== 首屏 ========== */
+    .hero {
+      background: linear-gradient(135deg, #eef4fb 0%, #e4edf7 55%, #fdf6e8 100%);
+      border-bottom: 1px solid var(--line);
+      padding: 34px 0 30px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::after {
+      content: ""; position: absolute; right: -60px; top: -60px; width: 320px; height: 320px;
+      background: radial-gradient(circle, rgba(217,154,27,.14) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero-grid {
+      display: grid; grid-template-columns: 1.25fr .75fr; gap: 30px; align-items: center;
+    }
+    .hero-kicker {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--accent-soft); color: var(--accent-ink); font-weight: 700;
+      font-size: .78rem; padding: 4px 12px; border-radius: 20px; margin-bottom: 12px;
+      letter-spacing: .5px;
+    }
+    .hero h1 { font-size: 2.2rem; color: var(--brand); margin-bottom: .35em; }
+    .hero-lead {
+      color: var(--ink-soft); font-size: 1.02rem; max-width: 620px; margin-bottom: 1.1em;
+    }
+    .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn {
+      display: inline-block; padding: 10px 22px; border-radius: 26px; font-weight: 700;
+      font-size: .92rem; border: 2px solid transparent; transition: .15s;
+    }
+    .btn-primary { background: var(--brand); color: #fff; }
+    .btn-primary:hover { background: var(--brand-mid); text-decoration: none; }
+    .btn-ghost { background: #fff; color: var(--brand); border-color: var(--brand); }
+    .btn-ghost:hover { background: var(--panel-soft); text-decoration: none; }
+    .hero-visual {
+      display: flex; justify-content: center; align-items: center;
+    }
+    .hero-visual svg { width: 100%; max-width: 300px; height: auto; }
+
+    /* ========== 三栏布局 ========== */
+    .layout {
+      display: grid;
+      grid-template-columns: 178px minmax(0, 1fr) 248px;
+      gap: 26px;
+      padding: 28px 0 10px;
+      align-items: start;
+    }
+    .col-left, .col-right { position: sticky; top: calc(var(--sticky-h) + 14px); }
+    .panel {
+      background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius-m);
+      padding: 16px 14px; box-shadow: var(--shadow-s); margin-bottom: 18px;
+    }
+    .panel-title {
+      font-size: .78rem; text-transform: uppercase; letter-spacing: 1.2px;
+      color: var(--muted); font-weight: 700; margin-bottom: 10px; padding-bottom: 8px;
+      border-bottom: 1px solid var(--line);
+    }
+    .channel-nav { list-style: none; padding: 0; margin: 0; }
+    .channel-nav li { margin-bottom: 2px; }
+    .channel-nav a {
+      display: block; padding: 6px 10px; border-radius: var(--radius-s); font-size: .88rem;
+      color: var(--ink-soft); font-weight: 500;
+    }
+    .channel-nav a:hover { background: var(--panel-soft); color: var(--brand); text-decoration: none; }
+
+    .toc { list-style: none; padding: 0; margin: 0; font-size: .84rem; }
+    .toc li { margin-bottom: 3px; }
+    .toc a {
+      display: block; padding: 4px 8px; border-radius: 4px; color: var(--ink-soft);
+      border-left: 2px solid transparent;
+    }
+    .toc a:hover { background: var(--panel-soft); color: var(--brand); border-left-color: var(--accent); text-decoration: none; }
+
+    .hot-list { list-style: none; padding: 0; margin: 0; counter-reset: hot; }
+    .hot-list li {
+      counter-increment: hot; position: relative; padding: 7px 0 7px 26px; font-size: .86rem;
+      border-bottom: 1px dashed var(--line); line-height: 1.45;
+    }
+    .hot-list li:last-child { border-bottom: none; }
+    .hot-list li::before {
+      content: counter(hot); position: absolute; left: 0; top: 8px;
+      width: 18px; height: 18px; background: var(--panel-soft); color: var(--muted);
+      border-radius: 50%; font-size: .7rem; font-weight: 700; display: flex;
+      align-items: center; justify-content: center;
+    }
+    .hot-list li:nth-child(-n+3)::before { background: var(--accent); color: #3a2a00; }
+    .hot-list a { color: var(--ink-soft); }
+    .hot-list a:hover { color: var(--brand); }
+
+    .tag-cloud { display: flex; flex-wrap: wrap; gap: 6px; }
+    .tag-cloud a {
+      font-size: .8rem; background: var(--panel-soft); color: var(--ink-soft); padding: 4px 10px;
+      border-radius: 20px; border: 1px solid var(--line);
+    }
+    .tag-cloud a:hover { background: var(--accent-soft); color: var(--accent-ink); border-color: var(--accent); text-decoration: none; }
+
+    /* ========== 中栏板块通用 ========== */
+    .section {
+      background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius-m);
+      padding: 22px 22px 18px; margin-bottom: 22px; box-shadow: var(--shadow-s);
+      scroll-margin-top: calc(var(--sticky-h) + 18px);
+    }
+    .section-head {
+      display: flex; align-items: baseline; justify-content: space-between; gap: 12px;
+      margin-bottom: 14px; flex-wrap: wrap;
+    }
+    .section-head h2 { margin: 0; font-size: 1.28rem; }
+    .section-sub { font-size: .82rem; color: var(--muted); }
+    .pill {
+      display: inline-block; font-size: .72rem; font-weight: 700; padding: 2px 9px;
+      border-radius: 20px; background: var(--panel-soft); color: var(--ink-soft);
+      letter-spacing: .3px;
+    }
+    .pill-accent { background: var(--accent-soft); color: var(--accent-ink); }
+    .pill-green { background: var(--green-soft); color: var(--green); }
+
+    /* 内容简介 */
+    .intro-text { color: var(--ink-soft); }
+    .intro-text p:last-child { margin-bottom: 0; }
+
+    /* 热门推荐卡片 */
+    .card-grid {
+      display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 14px;
+    }
+    .event-card {
+      border: 1px solid var(--line); border-radius: var(--radius-m); padding: 14px 15px;
+      background: #fbfdff; display: flex; flex-direction: column; gap: 6px;
+      transition: .15s;
+    }
+    .event-card:hover { border-color: var(--brand-mid); box-shadow: var(--shadow-m); }
+    .event-card h3 { font-size: .98rem; margin: 0; }
+    .event-tags { display: flex; flex-wrap: wrap; gap: 5px; }
+    .event-tags span {
+      font-size: .7rem; background: var(--panel-soft); color: var(--ink-soft);
+      padding: 1px 7px; border-radius: 10px;
+    }
+    .event-desc { font-size: .84rem; color: var(--muted); line-height: 1.55; margin: 0; }
+    .event-meta {
+      display: flex; gap: 12px; font-size: .74rem; color: var(--muted);
+      margin-top: auto; padding-top: 6px; border-top: 1px dashed var(--line);
+    }
+
+    /* 最新更新列表 */
+    .update-list { list-style: none; padding: 0; margin: 0; }
+    .update-list li {
+      display: flex; gap: 12px; padding: 9px 0; border-bottom: 1px dashed var(--line);
+      align-items: baseline;
+    }
+    .update-list li:last-child { border-bottom: none; }
+    .update-date {
+      font-size: .74rem; color: var(--muted); white-space: nowrap; min-width: 70px;
+      font-variant-numeric: tabular-nums;
+    }
+    .update-name { font-weight: 600; font-size: .9rem; }
+    .update-name a { color: var(--ink); }
+    .update-name a:hover { color: var(--brand); }
+    .update-summary { font-size: .83rem; color: var(--muted); }
+
+    /* 分类入口 */
+    .cat-grid {
+      display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 10px;
+    }
+    .cat-item {
+      border: 1px solid var(--line); border-radius: var(--radius-s); padding: 10px 12px;
+      background: var(--panel-soft); text-align: center; font-size: .86rem; font-weight: 600;
+      color: var(--brand);
+    }
+    .cat-item:hover { background: var(--accent-soft); border-color: var(--accent); text-decoration: none; }
+
+    /* 深度解析 */
+    .deep-body { color: var(--ink-soft); font-size: .95rem; }
+    .deep-body h3 { color: var(--brand); font-size: 1.05rem; }
+    .deep-body p { max-width: 72ch; }
+    .deep-body ul { max-width: 72ch; }
+
+    /* 指南步骤 */
+    .steps { list-style: none; padding: 0; margin: 0; counter-reset: step; }
+    .steps li {
+      counter-increment: step; position: relative; padding: 10px 0 10px 46px;
+      border-bottom: 1px dashed var(--line); font-size: .9rem; color: var(--ink-soft);
+    }
+    .steps li:last-child { border-bottom: none; }
+    .steps li::before {
+      content: counter(step); position: absolute; left: 0; top: 10px;
+      width: 30px; height: 30px; background: var(--brand); color: #fff;
+      border-radius: 50%; font-weight: 700; font-size: .86rem;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .steps strong { color: var(--ink); }
+
+    /* FAQ */
+    details.faq {
+      border: 1px solid var(--line); border-radius: var(--radius-s); margin-bottom: 8px;
+      background: #fbfdff;
+    }
+    details.faq summary {
+      cursor: pointer; padding: 10px 14px; font-weight: 600; font-size: .92rem;
+      list-style: none; display: flex; justify-content: space-between; gap: 10px;
+      color: var(--ink);
+    }
+    details.faq summary::-webkit-details-marker { display: none; }
+    details.faq summary::after {
+      content: "+"; font-weight: 700; color: var(--brand-mid); font-size: 1.1rem; line-height: 1;
+    }
+    details.faq[open] summary::after { content: "−"; }
+    details.faq .faq-body { padding: 0 14px 12px; font-size: .88rem; color: var(--ink-soft); }
+
+    /* 评论 */
+    .comment-list {
+      display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 12px;
+    }
+    .comment {
+      border: 1px solid var(--line); border-radius: var(--radius-s); padding: 11px 13px;
+      background: #fbfdff;
+    }
+    .comment-head { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; }
+    .avatar {
+      width: 26px; height: 26px; border-radius: 50%; background: var(--brand-mid);
+      color: #fff; font-size: .72rem; font-weight: 700; display: flex;
+      align-items: center; justify-content: center; flex-shrink: 0;
+    }
+    .comment-name { font-weight: 600; font-size: .84rem; }
+    .comment-text { font-size: .84rem; color: var(--ink-soft); margin: 0; }
+
+    /* 资讯 */
+    .news-list { list-style: none; padding: 0; margin: 0; }
+    .news-item {
+      padding: 11px 0; border-bottom: 1px dashed var(--line);
+    }
+    .news-item:last-child { border-bottom: none; }
+    .news-head { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+    .news-head strong { font-size: .93rem; }
+    .news-head time { font-size: .74rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+    .news-desc { font-size: .84rem; color: var(--muted); margin: 2px 0 0; }
+
+    /* 相关推荐 */
+    .rel-list { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+    .rel-list a {
+      display: inline-block; font-size: .84rem; padding: 6px 14px; border-radius: 20px;
+      border: 1px solid var(--line-strong); background: #fff; color: var(--brand);
+      font-weight: 500;
+    }
+    .rel-list a:hover { background: var(--brand); color: #fff; border-color: var(--brand); text-decoration: none; }
+
+    /* 趋势观察 */
+    .trend-box {
+      display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 12px;
+    }
+    .trend-item {
+      background: var(--panel-soft); border-radius: var(--radius-s); padding: 12px 14px;
+      border-left: 4px solid var(--accent);
+    }
+    .trend-item h3 { font-size: .9rem; margin: 0 0 4px; }
+    .trend-item p { font-size: .82rem; color: var(--muted); margin: 0; }
+
+    /* 搜索无结果 */
+    .search-empty {
+      display: none; padding: 12px 14px; background: var(--accent-soft); color: var(--accent-ink);
+      border-radius: var(--radius-s); font-size: .88rem; margin-bottom: 14px;
+    }
+    .search-empty.show { display: block; }
+
+    /* ========== 页脚 ========== */
+    .site-footer {
+      margin-top: 36px; background: var(--brand); color: #cfdcea; padding: 34px 0 20px;
+      font-size: .85rem;
+    }
+    .footer-grid {
+      display: grid; grid-template-columns: 1.3fr 1fr 1fr 1fr; gap: 26px;
+    }
+    .footer-brand { font-size: 1.15rem; font-weight: 800; color: #fff; margin-bottom: 8px; letter-spacing: .5px; }
+    .footer-desc { color: #a9c1d8; line-height: 1.6; }
+    .footer-col h3 {
+      color: #fff; font-size: .85rem; letter-spacing: .6px; margin-bottom: 10px;
+    }
+    .footer-col ul { list-style: none; padding: 0; margin: 0; }
+    .footer-col li { margin-bottom: 5px; }
+    .footer-col a { color: #b8cddf; font-size: .83rem; }
+    .footer-col a:hover { color: #fff; }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,.14); margin-top: 26px; padding-top: 14px;
+      display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap;
+      color: #93aec7; font-size: .78rem;
+    }
+
+    /* ========== 响应式 ========== */
+    @media (max-width: 1080px) {
+      .layout { grid-template-columns: 168px minmax(0,1fr); }
+      .col-right { display: none; }
+    }
+    @media (max-width: 860px) {
+      .layout { grid-template-columns: 1fr; }
+      .col-left { position: static; order: 2; }
+      .col-main { order: 1; }
+      .col-right { position: static; display: block; order: 3; }
+      .hero-grid { grid-template-columns: 1fr; }
+      .hero-visual { display: none; }
+      .card-grid { grid-template-columns: 1fr; }
+      .comment-list { grid-template-columns: 1fr; }
+      .trend-box { grid-template-columns: 1fr; }
+      .cat-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .header-search input { width: 110px; }
+    }
+    @media (max-width: 560px) {
+      .wrap { padding: 0 14px; }
+      .hero h1 { font-size: 1.6rem; }
+      .header-inner { gap: 10px; }
+      .header-nav { margin-left: 0; width: 100%; }
+      .header-search { margin-left: 0; width: 100%; }
+      .header-search input { flex: 1; width: auto; }
+      .cat-grid { grid-template-columns: 1fr 1fr; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .section { padding: 16px 14px 14px; }
+      .sticky-top { position: static; }
+      .section { scroll-margin-top: 12px; }
+      .col-left, .col-right { top: auto; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">跳到主要内容</a>
+
+  <!-- 吸顶公告条 + 页头 -->
+  <div class="sticky-top">
+    <div class="notice-bar" role="region" aria-label="站内公告">
+      <div class="wrap">
+        <span class="notice-tag">公告</span>
+        <span>本周“校园夜间定向赛”报名截止至周五 18:00，赛程与分组已更新。</span>
+        <a href="/#latest">查看最新赛程 →</a>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <div class="brand">
+          <svg width="40" height="40" viewBox="0 0 40 40" role="img" aria-label="每日大赛校园大赛图形标志">
+            <rect width="40" height="40" rx="10" fill="#1e3a5f"/>
+            <path d="M9 27l5-14 5 9 5-7 5 12" stroke="#f5c542" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="29" cy="12" r="3" fill="#f5c542"/>
+            <path d="M9 31h22" stroke="#7da3c7" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <span class="brand-text">每日大赛校园大赛</span>
+        </div>
+        <nav class="header-nav" aria-label="频道导航">
+          <a href="/#intro">赛事简介</a>
+          <a href="/#hot">热门赛项</a>
+          <a href="/#latest">最新更新</a>
+          <a href="/#categories">赛事分类</a>
+          <a href="/#deep">深度解析</a>
+          <a href="/#faq">常见问答</a>
+        </nav>
+        <div class="header-search">
+          <label for="search-input" style="position:absolute;left:-9999px;">搜索赛事内容</label>
+          <input id="search-input" type="search" placeholder="搜索赛项 / 类型" autocomplete="off">
+          <button type="button" id="search-btn">搜索</button>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <!-- 首屏 -->
+  <section class="hero" aria-label="主题首屏">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="hero-kicker">每日更新 · 校园赛事入口</span>
+        <h1>每日大赛校园大赛</h1>
+        <p class="hero-lead">汇集每日校园赛事与大型校园比赛的内容入口，覆盖竞技、创意、科技、体育等方向。按类型筛选、按赛程追更，快速找到你关心的校园比赛与参与方式。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="/#hot">浏览热门赛项</a>
+          <a class="btn btn-ghost" href="/#guide">参赛体验指南</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <svg viewBox="0 0 300 230" width="300" height="230">
+          <defs>
+            <linearGradient id="heroBg" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#dce8f5"/>
+              <stop offset="100%" stop-color="#f6e8c8"/>
+            </linearGradient>
+          </defs>
+          <rect x="10" y="16" width="280" height="198" rx="18" fill="url(#heroBg)" stroke="#bccbdb"/>
+          <rect x="34" y="44" width="108" height="12" rx="6" fill="#1e3a5f" opacity=".85"/>
+          <rect x="34" y="66" width="72" height="8" rx="4" fill="#7da3c7"/>
+          <rect x="34" y="94" width="232" height="1.5" fill="#bccbdb"/>
+          <g>
+            <rect x="34" y="110" width="100" height="52" rx="8" fill="#fff" stroke="#dce4ee"/>
+            <circle cx="52" cy="128" r="7" fill="#f5c542"/>
+            <rect x="66" y="122" width="52" height="7" rx="3.5" fill="#2f5f8a"/>
+            <rect x="66" y="136" width="38" height="6" rx="3" fill="#bccbdb"/>
+            <rect x="34" y="172" width="100" height="8" rx="4" fill="#dce4ee"/>
+          </g>
+          <g>
+            <rect x="146" y="110" width="120" height="52" rx="8" fill="#fff" stroke="#dce4ee"/>
+            <rect x="158" y="122" width="60" height="7" rx="3.5" fill="#1e3a5f"/>
+            <rect x="158" y="136" width="80" height="6" rx="3" fill="#bccbdb"/>
+            <rect x="158" y="148" width="46" height="6" rx="3" fill="#d99a1b" opacity=".7"/>
+          </g>
+          <g>
+            <rect x="146" y="172" width="120" height="26" rx="8" fill="#1e3a5f"/>
+            <rect x="158" y="182" width="58" height="6" rx="3" fill="#f5c542"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- 三栏主内容 -->
+  <div class="wrap">
+    <div class="layout">
+      <!-- 左栏 -->
+      <aside class="col-left" aria-label="频道与栏目导航">
+        <div class="panel">
+          <div class="panel-title">频道导航</div>
+          <ul class="channel-nav">
+            <li><a href="/#intro">赛事简介</a></li>
+            <li><a href="/#hot">热门赛项推荐</a></li>
+            <li><a href="/#latest">每日最新更新</a></li>
+            <li><a href="/#categories">赛事分类入口</a></li>
+            <li><a href="/#deep">深度解析</a></li>
+            <li><a href="/#guide">参赛体验指南</a></li>
+            <li><a href="/#faq">常见问答</a></li>
+            <li><a href="/#comments">参赛者讨论</a></li>
+            <li><a href="/#news">赛事资讯</a></li>
+            <li><a href="/#related">相关推荐</a></li>
+            <li><a href="/#trend">趋势观察</a></li>
+          </ul>
+        </div>
+        <div class="panel">
+          <div class="panel-title">快速分类</div>
+          <div class="tag-cloud">
+            <a href="/#categories">体育竞技</a>
+            <a href="/#categories">科技创新</a>
+            <a href="/#categories">文艺创意</a>
+            <a href="/#categories">学术竞赛</a>
+            <a href="/#categories">团队协作</a>
+            <a href="/#categories">个人挑战</a>
+          </div>
+        </div>
+      </aside>
+
+      <!-- 中栏 -->
+      <main class="col-main" id="main-content">
+        <div class="search-empty" id="search-empty" role="status">没有找到匹配的赛事内容，试试“篮球”“编程”“辩论”等关键词。</div>
+
+        <!-- 1. 内容简介 -->
+        <section class="section" id="intro">
+          <div class="section-head">
+            <h2>赛事简介：每日校园赛事与大型校园比赛</h2>
+            <span class="pill pill-accent">导航型</span>
+          </div>
+          <div class="intro-text">
+            <p>每日大赛校园大赛是一个面向高校学生的校园赛事内容入口，围绕“每日进行的小型校园比赛”和“阶段性大型校园赛事”两条主线，整理赛程、类型与参与方式。如果你正在找校园里可以报名参加的竞技活动，或者想追踪院系联赛、校级联赛的进展，这里按类型和赛程做了归类。</p>
+            <p>页面内容分为几个层次：热门赛项推荐展示近期关注度较高的校园比赛，最新更新跟踪每日赛程变化，分类入口按体育竞技、科技创新、文艺创意、学术竞赛等方向划分。深度解析部分讨论校园赛事的组织逻辑与参与节奏，FAQ 则集中回答报名条件、赛制区别和观赛方式等具体问题。</p>
+            <p>对于想比较不同赛项的人，可以从“团队协作型”和“个人挑战型”两个角度切入；对于准备参赛的新生，参赛体验指南提供了从报名到赛后复盘的基本路径。所有条目均以示例形式展示页面结构，方便你按自己的兴趣筛选。</p>
+            <p>无论你是想找一场周末可以围观的院系篮球赛，还是想了解校级科技创新大赛的申报流程，都可以从左侧频道或页面目录进入对应板块。每日大赛校园大赛强调“可搜索、可筛选、可追更”，让校园赛事信息不再散落在各个通知群中。</p>
+          </div>
+        </section>
+
+        <!-- 2. 热门内容推荐 -->
+        <section class="section" id="hot">
+          <div class="section-head">
+            <h2>热门赛项推荐：近期校园比赛方向</h2>
+            <span class="pill">6 项</span>
+          </div>
+          <div class="card-grid" id="hot-cards">
+            <article class="event-card">
+              <h3>院系篮球对抗赛</h3>
+              <div class="event-tags"><span>体育竞技</span><span>团队协作</span><span>周末场</span></div>
+              <p class="event-desc">以院系为单位的循环赛制，适合喜欢现场氛围的观众，也适合想找固定队友一起训练的新生。</p>
+              <div class="event-meta"><span>更新 3 场</span><span>热度 9.2</span><span>观众评分 4.6</span></div>
+            </article>
+            <article class="event-card">
+              <h3>校园编程挑战赛</h3>
+              <div class="event-tags"><span>科技创新</span><span>个人挑战</span><span>线上初赛</span></div>
+              <p class="event-desc">围绕算法与工程实践出题，初赛线上进行，决赛在机房现场编码，适合计算机相关专业学生。</p>
+              <div class="event-meta"><span>更新 2 轮</span><span>热度 8.8</span><span>难度中等</span></div>
+            </article>
+            <article class="event-card">
+              <h3>校园辩论联赛</h3>
+              <div class="event-tags"><span>学术竞赛</span><span>团队协作</span><span>阶梯赛制</span></div>
+              <p class="event-desc">按积分分组的辩论联赛，每场有固定辩题与评委点评，适合想锻炼表达与逻辑的同学。</p>
+              <div class="event-meta"><span>更新 4 场</span><span>热度 8.5</span><span>观赛开放</span></div>
+            </article>
+            <article class="event-card">
+              <h3>短跑与接力计时赛</h3>
+              <div class="event-tags"><span>体育竞技</span><span>个人挑战</span><span>傍晚场</span></div>
+              <p class="event-desc">面向全校的田径单项与接力计时赛，按成绩排名，适合想测试自己短跑水平的学生。</p>
+              <div class="event-meta"><span>更新 1 场</span><span>热度 7.9</span><span>报名中</span></div>
+            </article>
+            <article class="event-card">
+              <h3>创意短视频征集赛</h3>
+              <div class="event-tags"><span>文艺创意</span><span>线上征集</span><span>主题赛</span></div>
+              <p class="event-desc">以校园生活为主题征集短视频作品，评审兼顾创意与完成度，适合喜欢拍摄和剪辑的同学。</p>
+              <div class="event-meta"><span>更新 5 条</span><span>热度 8.1</span><span>截止临近</span></div>
+            </article>
+            <article class="event-card">
+              <h3>数学建模校内选拔</h3>
+              <div class="event-tags"><span>学术竞赛</span><span>团队协作</span><span>三天赛程</span></div>
+              <p class="event-desc">三人组队在限定时间内完成建模与论文，适合有数学与编程基础、希望冲击更高赛事的学生。</p>
+              <div class="event-meta"><span>更新 3 队</span><span>热度 8.6</span><span>资料赛</span></div>
+            </article>
+          </div>
+        </section>
+
+        <!-- 3. 最新更新 -->
+        <section class="section" id="latest">
+          <div class="section-head">
+            <h2>每日最新更新：赛程与分组变化</h2>
+            <span class="pill pill-green">实时追踪</span>
+          </div>
+          <ul class="update-list">
+            <li>
+              <span class="update-date">04-22</span>
+              <div><span class="update-name"><a href="/#hot">院系篮球对抗赛</a></span> <span class="update-summary">— 小组赛第三轮赛程公布，周五晚两场同时开打。</span></div>
+            </li>
+            <li>
+              <span class="update-date">04-22</span>
+              <div><span class="update-name"><a href="/#hot">校园编程挑战赛</a></span> <span class="update-summary">— 初赛题目范围更新，新增两道工程实践题。</span></div>
+            </li>
+            <li>
+              <span class="update-date">04-21</span>
+              <div><span class="update-name"><a href="/#hot">校园辩论联赛</a></span> <span class="update-summary">— 八强对阵抽签完成，首场辩题聚焦校园公共空间。</span></div>
+            </li>
+            <li>
+              <span class="update-date">04-21</span>
+              <div><span class="update-name"><a href="/#hot">短跑与接力计时赛</a></span> <span class="update-summary">— 报名人数达到上限，新增替补登记通道。</span></div>
+            </li>
+            <li>
+              <span class="update-date">04-20</span>
+              <div><span class="update-name"><a href="/#hot">创意短视频征集赛</a></span> <span class="update-summary">— 评审细则补充“叙事完整度”评分项，截止时间不变。</span></div>
+            </li>
+            <li>
+              <span class="update-date">04-20</span>
+              <div><span class="update-name"><a href="/#hot">数学建模校内选拔</a></span> <span class="update-summary">— 赛题背景资料开放下载，组队名单确认中。</span></div>
+            </li>
+            <li>
+              <span class="update-date">04-19</span>
+              <div><span class="update-name"><a href="/#categories">科技创新类</a></span> <span class="update-summary">— 新增“智能硬件创意赛”条目，面向大二以上学生。</span></div>
+            </li>
+            <li>
+              <span class="update-date">04-19</span>
+              <div><span class="update-name"><a href="/#categories">文艺创意类</a></span> <span class="update-summary">— 校园歌手大赛海选时间调整至下周三下午。</span></div>
+            </li>
+            <li>
+              <span class="update-date">04-18</span>
+              <div><span class="update-name"><a href="/#news">赛事资讯</a></span> <span class="update-summary">— 校级联赛总结报告发布，参与人数较上学期增长。</span></div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- 4. 分类入口 -->
+        <section class="section" id="categories">
+          <div class="section-head">
+            <h2>校园比赛分类：按方向快速筛选</h2>
+            <span class="pill">8 类</span>
+          </div>
+          <div class="cat-grid">
+            <a class="cat-item" href="/#hot">体育竞技</a>
+            <a class="cat-item" href="/#hot">科技创新</a>
+            <a class="cat-item" href="/#hot">文艺创意</a>
+            <a class="cat-item" href="/#hot">学术竞赛</a>
+            <a class="cat-item" href="/#hot">团队协作型</a>
+            <a class="cat-item" href="/#hot">个人挑战型</a>
+            <a class="cat-item" href="/#hot">线上参与型</a>
+            <a class="cat-item" href="/#hot">现场观赛型</a>
+          </div>
+        </section>
+
+        <!-- 5. 深度解析正文 -->
+        <section class="section" id="deep">
+          <div class="section-head">
+            <h2>深度解析：校园赛事的类型与参与节奏</h2>
+            <span class="pill pill-accent">阅读约 4 分钟</span>
+          </div>
+          <div class="deep-body">
+            <h3>每日小型比赛与阶段性大型赛事的区别</h3>
+            <p>校园里的比赛大致可以分为两类。一类是每日大赛校园大赛中“每日”所指的日常型比赛，例如院系之间的篮球循环赛、傍晚的短跑计时赛，特点是场次密、周期短、参与门槛低，观众和参赛者往往是同一批人。另一类是大型校园赛事，如数学建模选拔、编程挑战赛决赛、辩论联赛淘汰赛，准备周期长、评审更正式，通常集中在学期中段或期末前。</p>
+            <p>两类赛事的检索需求也不同。日常型比赛更多被搜“今天有什么比赛”“周末篮球赛在哪打”，关注的是时间和场地；大型赛事则常被搜“编程挑战赛怎么报名”“辩论联赛赛制”，关注的是规则和门槛。页面把两类分开呈现，并在分类入口中标注“团队协作型”“个人挑战型”，方便按参与方式定位。</p>
+
+            <h3>按参与方式选择：团队协作型与个人挑战型</h3>
+            <p>团队协作型赛事通常要求 3—5 人组队，适合已经有一群固定搭档的学生，也适合想通过比赛认识新队友的人。个人挑战型赛事则更看重个人准备程度，例如短跑计时、线上编程初赛。选择时可以先问自己两个问题：我每周能投入多少准备时间？我更享受和队友配合，还是独立完成挑战？</p>
+            <ul>
+              <li><strong>团队协作型：</strong>篮球对抗、辩论联赛、数学建模、创业计划赛。优势是分工互补，难点在协调时间与统一方案。</li>
+              <li><strong>个人挑战型：</strong>短跑计时、编程初赛、写作征集、摄影单项。优势是节奏自控，难点在缺少即时反馈。</li>
+            </ul>
+
+            <h3>赛事信息怎么看：赛程、赛制与报名条件</h3>
+            <p>浏览校园比赛时，最先确认的通常是三件事：赛程时间、赛制形式、报名条件。赛程时间决定了你能投入多少精力；赛制形式影响准备方向，例如单场淘汰制需要快速进入状态，积分循环制更看重稳定性；报名条件则包括年级限制、专业限制和人数要求。每日大赛校园大赛在卡片和更新列表中把这三类信息放在靠前位置，减少反复翻找。</p>
+            <p>以编程挑战赛为例，初赛线上进行、决赛现场编码，意味着你需要提前熟悉比赛用的编译环境和提交方式。辩论联赛的积分分组则要求你关注每一场的评委构成和辩题方向。把这些要素拆开看，比只看“比赛名称”更有助于判断是否适合自己。</p>
+
+            <h3>从观赛到参赛的过渡</h3>
+            <p>很多学生是从观众开始的。先看一两场院系篮球赛，感受现场节奏；再看一场辩论联赛，了解发言与质询的规则。当对某个赛项产生兴趣后，可以从“个人挑战型”的小型比赛切入，例如短跑计时或线上写作征集，积累经验后再组队参加团队赛事。这样的路径压力较小，也更容易坚持。</p>
+            <p>对于大型校园赛事，建议提前一个学期关注往届资料和评审偏好，把准备周期拉长到 4—6 周，而不是等到报名截止才临时组队。每日大赛校园大赛的更新板块会跟踪这类赛事的节点变化，适合作为信息入口。</p>
+          </div>
+        </section>
+
+        <!-- 6. 体验指南 -->
+        <section class="section" id="guide">
+          <div class="section-head">
+            <h2>参赛体验指南：从找到赛项到赛后复盘</h2>
+            <span class="pill">5 步</span>
+          </div>
+          <ol class="steps">
+            <li><strong>按类型浏览：</strong>从左栏快速分类或分类入口进入，先确定体育竞技、科技创新、文艺创意或学术竞赛方向。</li>
+            <li><strong>核对赛程与门槛：</strong>在热门赛项卡片和最新更新中查看时间、赛制、人数要求，排除与课程冲突的场次。</li>
+            <li><strong>搜索具体赛项：</strong>使用页头搜索框输入“篮球”“编程”“辩论”等关键词，页面会即时筛选匹配的卡片。</li>
+            <li><strong>记录关键节点：</strong>对感兴趣的赛事记录报名截止、初赛与决赛时间，避免因信息分散而错过。</li>
+            <li><strong>赛后复盘：</strong>把结果、评委反馈和队友分工简单记录，作为下一次选择团队协作型或个人挑战型赛事的参考。</li>
+          </ol>
+        </section>
+
+        <!-- 7. FAQ -->
+        <section class="section" id="faq">
+          <div class="section-head">
+            <h2>常见问答：校园赛事参与与观赛</h2>
+            <span class="pill">6 问</span>
+          </div>
+          <details class="faq" open>
+            <summary>每日大赛校园大赛里的赛事适合哪些学生参加？</summary>
+            <div class="faq-body">体育竞技类适合喜欢现场氛围、能保证固定训练时间的学生；科技创新与学术竞赛类适合愿意投入准备周期、对规则和评审标准感兴趣的学生；文艺创意类则对专业限制较少，更看重作品完成度。</div>
+          </details>
+          <details class="faq">
+            <summary>校园编程挑战赛一般多久更新一次赛程？</summary>
+            <div class="faq-body">初赛阶段通常每周更新一次题目范围和提交统计，决赛前会集中公布场地与设备要求。建议关注页面“最新更新”板块，节点变化会以条目形式列出。</div>
+          </details>
+          <details class="faq">
+            <summary>团队协作型比赛和个人挑战型比赛怎么选？</summary>
+            <div class="faq-body">先看每周可投入时间。团队赛需要协调训练或讨论时间，个人赛节奏更自控。其次看反馈需求：喜欢即时讨论和分工配合的选团队赛，习惯独立打磨作品的选个人赛。</div>
+          </details>
+          <details class="faq">
+            <summary>院系篮球对抗赛和校级联赛有什么区别？</summary>
+            <div class="faq-body">院系对抗赛以院系为单位、周期较短、场次密集，适合日常观赛；校级联赛覆盖范围更广、赛程更长，通常有更正式的积分与淘汰规则，参赛门槛和观赛规模都更大一些。</div>
+          </details>
+          <details class="faq">
+            <summary>辩论联赛的观赛需要提前报名吗？</summary>
+            <div class="faq-body">多数场次开放自由观赛，但决赛或场地有限的场次可能需要提前登记。页面更新中会注明“观赛开放”或“需登记”，建议以对应条目的说明为准。</div>
+          </details>
+          <details class="faq">
+            <summary>数学建模校内选拔适合什么基础的学生？</summary>
+            <div class="faq-body">适合具备一定数学基础、能使用至少一种编程工具、并愿意在三天内集中投入的学生。没有建模经验也可以从校内选拔开始，重点是把问题拆解和论文结构做完整。</div>
+          </details>
+        </section>
+
+        <!-- 8. 用户评论 -->
+        <section class="section" id="comments">
+          <div class="section-head">
+            <h2>参赛者讨论：真实语气与不同视角</h2>
+            <span class="pill">12 条</span>
+          </div>
+          <div class="comment-list">
+            <div class="comment"><div class="comment-head"><span class="avatar">林</span><span class="comment-name">林间慢跑</span></div><p class="comment-text">篮球赛的赛程更新挺及时，周五两场同时打，终于不用来回问时间了。</p></div>
+            <div class="comment"><div class="comment-head"><span class="avatar">陈</span><span class="comment-name">陈小北</span></div><p class="comment-text">编程挑战赛的初赛范围写得很清楚，新增的工程题比纯算法题更贴近实际。</p></div>
+            <div class="comment"><div class="comment-head"><span class="avatar">周</span><span class="comment-name">周周不熬夜</span></div><p class="comment-text">辩论联赛的辩题方向如果能提前一周公布就更好了，准备时间还是有点紧。</p></div>
+            <div class="comment"><div class="comment-head"><span class="avatar">许</span><span class="comment-name">许一诺</span></div><p class="comment-text">分类入口按团队和个人分，比只按学科分实用，找比赛的时候省了不少事。</p></div>
+            <div class="comment"><div class="comment-head"><span class="avatar">何</span><span class="comment-name">何同学</span></div><p class="comment-text">短跑计时赛报名满了之后还有替补通道，这个细节做得不错。</p></div>
+            <div class="comment"><div class="comment-head"><span class="avatar">赵</span><span class="comment-name">赵小满</span></div><p class="comment-text">短视频征集赛的评分项改过之后，叙事完整度占比更高，对认真拍的人更友好。</p></div>
+            <div class="comment"><div class="comment-head"><span class="avatar">吴</span><span class="comment-name">吴雨桐</span></div><p class="comment-text">作为大一新生，参赛指南里的五步流程挺直观，先看类型再核对时间，不会乱。</p></div>
+            <div class="comment"><div class="comment-head"><span class="avatar">郑</span><span class="comment-name">郑一鸣</span></div><p class="comment-text">数学建模的组队名单确认有点慢，希望更新频率再高一些。</p></div>
+            <div class="comment"><div class="comment-head"><span class="avatar">孙</span><span class="comment-name">孙疏影</span></div><p class="comment-text">搜索框试了“篮球”和“辩论”，筛选结果直接定位到卡片，不用翻整页。</p></div>
+            <div class="comment"><div class="comment-head"><span class="avatar">李</span><span class="comment-name">李知远</span></div><p class="comment-text">深度解析里讲团队赛和个人赛的区别，正好帮我决定先参加哪个。</p></div>
+            <div class="comment"><div class="comment-head"><span class="avatar">王</span><span class="comment-name">王鹿鸣</span></div><p class="comment-text">观赛信息如果能标注场地就更好，现在只写了时间。</p></div>
+            <div class="comment"><div class="comment-head"><span class="avatar">冯</span><span class="comment-name">冯晚风</span></div><p class="comment-text">整体信息量适中，没有太多花哨的东西，适合赛前快速扫一遍。</p></div>
+          </div>
+        </section>
+
+        <!-- 9. 相关资讯 -->
+        <section class="section" id="news">
+          <div class="section-head">
+            <h2>赛事资讯：校园比赛动态与观察</h2>
+            <span class="pill">6 条</span>
+          </div>
+          <ul class="news-list">
+            <li class="news-item">
+              <div class="news-head"><strong>校级联赛参与人数回升，团队项目占比提高</strong><time datetime="2026-04-18">2026-04-18</time></div>
+              <p class="news-desc">本学期院系联赛报名数据显示，团队协作型赛事参与人数较上学期有所增长，篮球与辩论项目增幅明显。</p>
+            </li>
+            <li class="news-item">
+              <div class="news-head"><strong>编程挑战赛调整初赛环境，强调工程实践</strong><time datetime="2026-04-16">2026-04-16</time></div>
+              <p class="news-desc">赛事组织方更新初赛说明，新增两道工程实践题，重点考察代码组织与边界处理能力。</p>
+            </li>
+            <li class="news-item">
+              <div class="news-head"><strong>辩论联赛引入评委现场点评环节</strong><time datetime="2026-04-14">2026-04-14</time></div>
+              <p class="news-desc">从八强赛开始，每场结束后安排评委集中点评，帮助参赛者理解评分维度与改进方向。</p>
+            </li>
+            <li class="news-item">
+              <div class="news-head"><strong>校园短视频征集赛延长作品打磨期</strong><time datetime="2026-04-12">2026-04-12</time></div>
+              <p class="news-desc">为提升作品完成度，征集截止时间不变，但评审细则补充了叙事完整度评分项。</p>
+            </li>
+            <li class="news-item">
+              <div class="news-head"><strong>数学建模校内选拔开放往届资料</strong><time datetime="2026-04-10">2026-04-10</time></div>
+              <p class="news-desc">组织方整理了近年赛题背景与优秀论文结构，供参赛队伍参考，资料在赛事页面内查看。</p>
+            </li>
+            <li class="news-item">
+              <div class="news-head"><strong>田径计时赛试行分时段报名</strong><time datetime="2026-04-08">2026-04-08</time></div>
+              <p class="news-desc">短跑与接力项目试行分时段报名，减少现场等待时间，后续将根据反馈决定是否推广。</p>
+            </li>
+          </ul>
+        </section>
+
+        <!-- 10. 相关推荐 -->
+        <section class="section" id="related">
+          <div class="section-head">
+            <h2>相关推荐：可搜索的校园赛事方向</h2>
+            <span class="pill">8 个</span>
+          </div>
+          <ul class="rel-list">
+            <li><a href="/#hot">院系篮球循环赛</a></li>
+            <li><a href="/#hot">校园编程算法赛</a></li>
+            <li><a href="/#hot">辩论联赛积分赛制</a></li>
+            <li><a href="/#hot">短跑接力计时赛</a></li>
+            <li><a href="/#hot">创意短视频征集</a></li>
+            <li><a href="/#hot">数学建模校内选拔</a></li>
+            <li><a href="/#hot">智能硬件创意赛</a></li>
+            <li><a href="/#hot">校园歌手海选赛</a></li>
+          </ul>
+        </section>
+
+        <!-- 11. 趋势观察 -->
+        <section class="section" id="trend">
+          <div class="section-head">
+            <h2>趋势观察：校园赛事内容消费变化</h2>
+            <span class="pill pill-green">观察</span>
+          </div>
+          <div class="trend-box">
+            <div class="trend-item">
+              <h3>短周期赛事关注度上升</h3>
+              <p>每日或周末进行的短周期比赛，因结果反馈快、参与门槛低，正在吸引更多非参赛观众。</p>
+            </div>
+            <div class="trend-item">
+              <h3>团队协作型赛制更受欢迎</h3>
+              <p>篮球、辩论、建模等团队项目报名人数增长，学生更看重配合过程与赛后复盘。</p>
+            </div>
+            <div class="trend-item">
+              <h3>线上初赛降低参与门槛</h3>
+              <p>编程与创意类赛事采用线上初赛，让更多低年级学生可以先从个人挑战切入。</p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- 右栏 -->
+      <aside class="col-right" aria-label="辅助阅读入口">
+        <div class="panel">
+          <div class="panel-title">页内目录</div>
+          <ul class="toc">
+            <li><a href="/#intro">赛事简介</a></li>
+            <li><a href="/#hot">热门赛项</a></li>
+            <li><a href="/#latest">最新更新</a></li>
+            <li><a href="/#categories">分类入口</a></li>
+            <li><a href="/#deep">深度解析</a></li>
+            <li><a href="/#guide">体验指南</a></li>
+            <li><a href="/#faq">常见问答</a></li>
+            <li><a href="/#comments">参赛讨论</a></li>
+            <li><a href="/#news">赛事资讯</a></li>
+            <li><a href="/#related">相关推荐</a></li>
+            <li><a href="/#trend">趋势观察</a></li>
+          </ul>
+        </div>
+        <div class="panel">
+          <div class="panel-title">热门条目</div>
+          <ol class="hot-list">
+            <li><a href="/#hot">院系篮球对抗赛</a></li>
+            <li><a href="/#hot">校园编程挑战赛</a></li>
+            <li><a href="/#hot">数学建模校内选拔</a></li>
+            <li><a href="/#hot">校园辩论联赛</a></li>
+            <li><a href="/#hot">创意短视频征集赛</a></li>
+          </ol>
+        </div>
+        <div class="panel">
+          <div class="panel-title">延伸阅读</div>
+          <div class="tag-cloud">
+            <a href="/#deep">团队赛准备节奏</a>
+            <a href="/#guide">从观赛到参赛</a>
+            <a href="/#faq">赛制区别</a>
+            <a href="/#news">校级联赛动态</a>
+            <a href="/#trend">短周期赛事观察</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <!-- 页脚 -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">每日大赛校园大赛</div>
+          <p class="footer-desc">校园赛事内容入口，按类型、赛程与参与方式整理每日比赛与大型校园赛事，方便学生筛选、追踪与参与。</p>
+        </div>
+        <div class="footer-col">
+          <h3>赛事方向</h3>
+          <ul>
+            <li><a href="/#categories">体育竞技</a></li>
+            <li><a href="/#categories">科技创新</a></li>
+            <li><a href="/#categories">文艺创意</a></li>
+            <li><a href="/#categories">学术竞赛</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>阅读入口</h3>
+          <ul>
+            <li><a href="/#deep">深度解析</a></li>
+            <li><a href="/#guide">体验指南</a></li>
+            <li><a href="/#faq">常见问答</a></li>
+            <li><a href="/#news">赛事资讯</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>社区与观察</h3>
+          <ul>
+            <li><a href="/#comments">参赛者讨论</a></li>
+            <li><a href="/#trend">趋势观察</a></li>
+            <li><a href="/#latest">每日更新</a></li>
+            <li><a href="/#related">相关推荐</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 每日大赛校园大赛 · 校园赛事门户示例页</span>
+        <span>部分内容为示例数据，仅用于展示页面结构</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var input = document.getElementById('search-input');
+      var btn = document.getElementById('search-btn');
+      var empty = document.getElementById('search-empty');
+      var cards = Array.prototype.slice.call(document.querySelectorAll('#hot-cards .event-card'));
+      var updateItems = Array.prototype.slice.call(document.querySelectorAll('#latest .update-list li'));
+
+      function normalize(s) {
+        return (s || '').toLowerCase().replace(/\s+/g, '');
+      }
+
+      function doSearch() {
+        var q = normalize(input.value);
+        var visibleCount = 0;
+
+        cards.forEach(function (card) {
+          var text = normalize(card.textContent);
+          var match = q === '' || text.indexOf(q) !== -1;
+          card.style.display = match ? '' : 'none';
+          if (match) visibleCount++;
+        });
+
+        updateItems.forEach(function (li) {
+          var text = normalize(li.textContent);
+          var match = q === '' || text.indexOf(q) !== -1;
+          li.style.display = match ? '' : 'none';
+        });
+
+        if (q !== '' && visibleCount === 0) {
+          empty.classList.add('show');
+        } else {
+          empty.classList.remove('show');
+        }
+      }
+
+      btn.addEventListener('click', doSearch);
+      input.addEventListener('input', doSearch);
+      input.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter') {
+          e.preventDefault();
+          doSearch();
+        }
+      });
+    })();
+  </script>
+</body>
+                </html>
